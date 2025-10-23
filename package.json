@@ -1,9 +1,9 @@
 {
-  "name": "@xbone-3/cordova-plugin-printer-androidx",
+  "name": "cordova-plugin-printer-androidx-xbone-3",
   "version": "1.0.0",
   "description": "Prints HTML documents",
   "cordova": {
-    "id": "@xbone-3/cordova-plugin-printer-androidx",
+    "id": "cordova-plugin-printer-androidx-xbone-3",
     "platforms": [
       "ios",
       "android",
