@@ -1,6 +1,7 @@
 
 <p align="left">
-    <b><a href="https://github.com/katzer/cordova-plugin-printer/blob/example/README.md">SAMPLE APP</a> :point_right:</b>
+    <b>:Note: This is a fork from <a href="https://github.com/katzer/cordova-plugin-printer">katzer/cordova-plugin-printer</a>. The original author has no further support for this plugin. Please use <a href="https://github.com/XBone-3/cordova-plugin-printer">XBone-3/cordova-plugin-printer</a> aka this fork.</b>
+    This fork added support for the following platforms: <b>AndroidX</b> to use with Android 13 and above. basically cordova 12 and above.
 </p>
 
 # Cordova Print Plugin <br> [![npm version](https://badge.fury.io/js/cordova-plugin-printer.svg)](http://badge.fury.io/js/cordova-plugin-printer) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L3HKQCD9UA35A "Donate once-off to this project using Paypal")
