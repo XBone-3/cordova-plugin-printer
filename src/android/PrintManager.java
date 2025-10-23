@@ -19,7 +19,7 @@
  under the License.
  */
 
-package de.appplant.cordova.plugin.printer;
+package cordova.plugin.printer;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,9 +27,9 @@ import android.graphics.Bitmap;
 import android.print.PrintAttributes;
 import android.print.PrintDocumentAdapter;
 import android.print.PrintJob;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.print.PrintHelper;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.print.PrintHelper;
 import android.webkit.CookieManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -43,7 +43,7 @@ import java.io.InputStream;
 import static android.content.Context.PRINT_SERVICE;
 import static android.os.Build.VERSION.SDK_INT;
 import static android.print.PrintJobInfo.STATE_COMPLETED;
-import static de.appplant.cordova.plugin.printer.PrintContent.ContentType.UNSUPPORTED;
+import static cordova.plugin.printer.PrintContent.ContentType.UNSUPPORTED;
 
 /**
  * Provides high level methods for printing.

@@ -19,7 +19,7 @@
  under the License.
  */
 
-package de.appplant.cordova.plugin.printer;
+package cordova.plugin.printer;
 
 import android.os.Bundle;
 import android.os.CancellationSignal;
@@ -28,8 +28,8 @@ import android.print.PageRange;
 import android.print.PrintAttributes;
 import android.print.PrintDocumentAdapter;
 import android.print.PrintDocumentInfo;
-import android.support.annotation.NonNull;
-import android.support.v4.print.PrintHelper;
+import androidx.annotation.NonNull;
+import androidx.print.PrintHelper;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -24,25 +24,25 @@
 <plugin id="cordova-plugin-printer"
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        version="0.8.0">
+        version="1.0.0">
 
     <name>Printer</name>
 
     <description>Prints HTML content</description>
 
-    <repo>https://github.com/katzer/cordova-plugin-printer.git</repo>
+    <repo>https://github.com/XBone-3/cordova-plugin-printer.git</repo>
 
-    <keywords>appplant, printer, cordova</keywords>
+    <keywords>printer, cordova, androidx</keywords>
 
     <license>Apache 2.0</license>
 
-    <author>Sebastián Katzer</author>
+    <author>Nagendra Mantrabuddi</author>
 
     <!-- cordova -->
     <engines>
-        <engine name="cordova" version=">=3.0.0" />
-        <engine name="android-sdk" version=">=19" />
-        <engine name="apple-ios" version=">=8.0" />
+        <engine name="cordova" version=">=11.0.0" />
+        <engine name="android-sdk" version=">=22" />
+        <engine name="apple-ios" version=">=12.0" />
     </engines>
 
     <!-- interface -->
@@ -88,36 +88,45 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Printer">
-                <param name="android-package" value="de.appplant.cordova.plugin.printer.Printer"/>
+                <param name="android-package" value="cordova.plugin.printer.Printer"/>
             </feature>
         </config-file>
 
-        <preference name="ANDROID_SUPPORT_V4_VERSION" default="28.+"/>
+        <preference name="ANDROID_MIN_SDK_VERSION" default="22" />
+        <preference name="ANDROID_TARGET_SDK_VERSION" default="34" />
+        <preference name="ANDROIDXENABLED" default="true" />
+        <framework src="androidx.print:print:1.1.0" />
+        <framework src="androidx.annotation:annotation:1.7.1" />
 
-        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
+
+        <!-- <preference name="ANDROID_SUPPORT_V4_VERSION" default="28.+"/> -->
+
+        <!-- <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/> -->
+        <framework src="androidx.core:core:1.12.0"/>
+
 
         <source-file src="src/android/PrintAdapter.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
 
         <source-file src="src/android/PrintContent.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
 
         <source-file src="src/android/Printer.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
 
         <source-file src="src/android/PrintIO.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
 
         <source-file src="src/android/PrintManager.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
 
         <source-file src="src/android/PrintOptions.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
 
         <source-file src="src/android/PrintProxy.java"
-            target-dir="src/de/appplant/cordova/plugin/printer" />
+            target-dir="src/cordova/plugin/printer" />
     </platform>
 
     <!-- windows -->

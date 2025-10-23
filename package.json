@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-printer",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "description": "Prints HTML documents",
   "cordova": {
     "id": "cordova-plugin-printer",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katzer/cordova-plugin-printer.git"
+    "url": "git+https://github.com/XBone-3/cordova-plugin-printer.git"
   },
   "keywords": [
-    "appplant",
+    "androidx",
     "printer",
     "cordova",
     "ecosystem:cordova",
@@ -28,22 +28,28 @@
   "engines": [
     {
       "name": "cordova",
-      "version": ">=3.0.0"
-    },
-    {
-      "name": "android-sdk",
-      "version": ">=19"
+      "version": ">=11.0.0"
     },
     {
       "name": "apple-ios",
-      "version": ">=8.0"
+      "version": ">=12.0.0"
     }
   ],
-  "author": "Sebastián Katzer",
+  "peerDependencies": {
+    "cordova-android": ">=12.0.0",
+    "cordova-ios": ">=7.0.0"
+  },
+  "cordovaDependencies": {
+    "1.0.0": {
+      "cordova-android": ">=12.0.0",
+      "cordova-ios": ">=7.0.0"
+    }
+  },
+  "author": "Nagendra Mantrabuddi",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/katzer/cordova-plugin-printer/issues"
+    "url": "https://github.com/XBone-3/cordova-plugin-printer/issues"
   },
-  "homepage": "https://github.com/katzer/cordova-plugin-printer#readme",
+  "homepage": "https://github.com/XBone-3/cordova-plugin-printer#readme",
   "dependencies": {}
 }
